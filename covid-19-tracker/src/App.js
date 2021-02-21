@@ -13,8 +13,8 @@ function App() {
       <FormControl className="app_dropdown">
         <Select variant ="outline" value ="abs">
           <menuItem value = "worldwide"> Worldwide</menuItem>
-          <menuItem value = "worldwide"> Worldwide</menuItem>
-          <menuItem value = "worldwide"> Worldwide</menuItem>
+          <menuItem value = "worldwide"> Country 1</menuItem>
+          <menuItem value = "worldwide"> Country 2</menuItem>
           <menuItem value = "worldwide"> Worldwide</menuItem>
 
 
