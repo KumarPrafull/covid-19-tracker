@@ -3,24 +3,27 @@ import {
   MenuItem,
   FormControl,
   Select,
-} from "@material"
+} from "@material-ui/core"
 import './App.css';
 
 function App() {
   return (
     <div className="app">
+      <div className="app__header">
       <h1>COVID 19 TRACKER</h1>
-      <FormControl className="app_dropdown">
-        <Select variant ="outline" value ="abs">
-          <menuItem value = "worldwide"> Worldwide</menuItem>
-          <menuItem value = "worldwide"> Country 1</menuItem>
-          <menuItem value = "worldwide"> Country 2</menuItem>
-          <menuItem value = "worldwide"> Worldwide</menuItem>
+      <FormControl className="app__dropdown">
+        <Select variant ="outlined" value ="abc">
+          <MenuItem value = "worldwide"> Worldwide</MenuItem>
+          <MenuItem value = "country1"> Country 1</MenuItem>
+          <MenuItem value = "country2"> Country 2</MenuItem>
+          <MenuItem value = "country3"> Worldwide</MenuItem>
 
 
         </Select>
 
       </FormControl>
+      </div>
+      
      {/* Header 1 */}
      {/* Title + select input dropdown field */}
      
