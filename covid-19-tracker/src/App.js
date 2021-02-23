@@ -9,6 +9,7 @@ import './App.css';
 function App() {
   const [countries, setCountries] = useState([]);
   const [country, setCountry] = useState("worldwide");
+  
   useEffect(() => {
     const getCountreisData = async () => {
       await fetch("https://disease.sh/v3/covid-19/countries")
@@ -24,7 +25,6 @@ function App() {
     };
     getCountreisData();
   },[]);
-
 
 
   const onCountryChange = async (event) => {
