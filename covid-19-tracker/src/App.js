@@ -3,7 +3,8 @@ import {
   MenuItem,
   FormControl,
   Select,
-} from "@material-ui/core"
+} from "@material-ui/core";
+import InfoBox from "./infoBox";
 import './App.css';
 
 function App() {
@@ -45,23 +46,18 @@ function App() {
               <MenuItem value={country.value}>{country.name}</MenuItem>              
 
             ))}
-          {/* <MenuItem value = "worldwide"> Worldwide</MenuItem>
-          <MenuItem value = "country1"> Country 1</MenuItem>
-          <MenuItem value = "country2"> Country 2</MenuItem>
-          <MenuItem value = "country3"> Worldwide</MenuItem> */}
-
-
         </Select>
 
       </FormControl>
+      </div> 
+      <div className="app__stats">
+        <InfoBox title="Coronavirus Cases" cases={123} total={2000}/>
+        <InfoBox title="Recovered" cases={1234} total={3000} />
+        <InfoBox title="Deaths" cases={12345} total={50000} />
       </div>
-      
-     {/* Header 1 */}
-     {/* Title + select input dropdown field */}
-     
-     {/* InfoBox*/}
-     {/* InfoBox*/}
-     {/* InfoBox*/}
+
+
+
 
      {/* Table */}
      {/* Graph */}
