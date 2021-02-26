@@ -86,7 +86,7 @@ fetchData();
 
     return (
         <div>
-            <h1>I am a graph</h1>
+            <h1>Worldwide new cases</h1>
             {data?.length >0 && (
             <Line 
             options={options}
